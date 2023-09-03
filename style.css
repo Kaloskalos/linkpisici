@@ -1,0 +1,52 @@
+html{
+    background: black url(background.jpg) center center no-repeat;
+    background-size: cover; color:  white;   
+}
+
+
+body 
+{
+    display: block;
+    place-items: center;
+    margin: 0;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 16px;
+    line-height: 1,5em;
+    @media (min-width: 500px) { body{display: grid;}}
+}
+.Container {   
+    margin: 2vh;
+    background: rgb(79, 109, 245);
+    padding: 2rem;
+    border-radius: 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1,5em;
+    @media (min-width: 380px) { .Container{ margin: 2vh; padding: 2rem; border-radius: 3rem;}}
+    @media (min-width: 380px) { .Container{ margin: 4vw; padding: 3cm;}}
+  
+}
+.header{}
+    .Avatar{ display: block; float: left; width: 150px; height: auto;
+    margin: 0 1em 1em 0; border-radius: 50%;
+    @media (min-width: 380px) { .Avatar{float: left;}}
+    @media (min-width: 380px) { .Avatar{width: clamp(130px, 14vw, 12rem)}}
+    .DescrierePrincipala{display: block; margin: 0,5em 0 1,5em;}
+}
+    .TitulPaginii{
+        display: block; font-size: clamp(2rem 6vw 4rem); margin: 0; line-height: 1em;
+    }
+.main{ clear: both;   }
+
+    .ListaLinkuri{ display: block; margin: 0; padding: 0;  }
+      .ListaItem {  display: block; margin: 0; border-bottom: 1px solid #fff; }
+        .ListaLink{ display: block;  padding: 0,5em; color: #fff; text-decoration: none; }
+          .ListaTitlu, .ListaText{ display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1,5em;}
+          .Listatext{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+        
+     @media (min-widht: 1800px) {
+            .ListaLinkuri {display: grid; grid-template-columns: 1fr 1fr;}
+
+     }    
+          
+
+            
